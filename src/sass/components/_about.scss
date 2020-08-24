@@ -59,6 +59,7 @@
     }
     &-paragraph {
       width: 70%;
+      line-height: 1.5;
 
       @include respond(phone) {
         width: 100%;
@@ -208,9 +209,9 @@
 }
 
 .youtube-video {
-  height: 315px;
-  width: 560px;
-  margin: 10rem auto;
+  height: 515px;
+  width: 860px;
+  margin: 5rem auto 10rem;
 
   @include respond(phone) {
     height: 200px;

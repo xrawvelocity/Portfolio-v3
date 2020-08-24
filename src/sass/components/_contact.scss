@@ -1,3 +1,7 @@
+#contact {
+  height: 100px;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,6 @@
   align-items: center;
   animation: fadeIn 0.5s ease-out 0.5s;
   animation-fill-mode: backwards;
-  padding-top: 10%;
   overflow-y: hidden;
 
   &-text {
@@ -28,6 +31,7 @@
 
     &__paragraph {
       font-size: 3rem;
+      line-height: 1.5;
       margin-top: 3rem;
     }
   }
@@ -315,20 +319,21 @@
     }
 
     &-button {
-      background-color: #ddd;
-      color: #111;
+      background-color: #08165D;
+      color: #ddd;
       font-size: 3rem;
       border: 1px solid #111;
       border-radius: 3px;
-      padding: 1rem 1.5rem;
+      padding: 1.5rem 2rem;
+      font-weight: 500;
       text-transform: uppercase;
       margin-top: 3rem;
       align-self: center;
       transition: all 0.2s ease-out;
 
       &:hover {
-        background-color: #fff;
-        color: #222;
+        background-color: #0c2088;
+        color: #fff;
         cursor: pointer;
       }
     }

@@ -88,6 +88,7 @@ export default class About extends Component {
             </div>
           </div>
         </div> */}
+        <h2 className="about-story-title" style={{marginTop: "50px", width: "100%", textAlign: "center"}}>About</h2>
         <iframe className="youtube-video" title="Web Dev Journey" src="https://www.youtube.com/embed/vZATCcCbpSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
         <div className="about-story">
           <h2 className="about-story-title" style={{marginTop: "30px"}}>Background</h2>

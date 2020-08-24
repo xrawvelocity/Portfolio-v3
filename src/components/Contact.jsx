@@ -4,8 +4,9 @@ import React, { Component } from "react";
 export default class Contact extends Component {
   render() {
     return (
-      <section  class="contact">
-        <div id="contact" class="contact-text">
+      <section class="contact">
+        <div id="contact"></div>
+        <div class="contact-text">
           <h1 class="contact-text__title">
             Let's build something great together.
           </h1>

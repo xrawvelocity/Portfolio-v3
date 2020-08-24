@@ -9,6 +9,7 @@ export default class Work extends Component {
   render() {
     return (
       <section id="work" className="work">
+        <h2 className="about-story-title" style={{marginTop: "30px"}}>Work</h2>
         <div className="work-grid">
 
           <div className="work-grid-card-container">

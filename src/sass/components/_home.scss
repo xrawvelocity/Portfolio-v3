@@ -145,7 +145,7 @@
 
         &:hover {
           box-shadow: 0rem 1rem 1rem #111;
-          transform: translateY(-.5rem);
+          background-color: #0c2088;
         }
 
         @include respond(phone) {
