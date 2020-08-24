@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);
 @keyframes shine {
   0% {
     box-shadow: 0 0 0.1rem #fff; }
@@ -76,13 +76,13 @@
     opacity: 1; } }
 
 @font-face {
-  font-family: 'archiaregular';
+  font-family: "archiaregular";
   src: url("../fonts/archia-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'modernplate';
+  font-family: "modernplate";
   src: url("../fonts/ModernPlate.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
@@ -115,7 +115,7 @@ html {
       font-size: 40%; } }
 
 body {
-  font-family: "archiaregular", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased; }
 
 a:link,

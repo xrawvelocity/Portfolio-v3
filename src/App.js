@@ -1,20 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Home from "./components/Home";
 import Work from "./components/Work";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import { Switch, Route, Link } from "react-router-dom";
 
 export default class App extends React.Component {
-  state = {
-    selected: ""
-  }
-
-  setSelected = (what) => {
-    this.setState({
-      selected: what
-    })
-  }
 
   render() {
     return (
