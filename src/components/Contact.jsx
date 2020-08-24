@@ -15,7 +15,27 @@ export default class Contact extends Component {
           </p>
         </div>
 
-        
+        {/* <div class="contact-links">
+          <a
+            href="https://linkedin.com/in/victor--fernandez"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-links__linkedin"
+          />
+          <a
+            href="./files/VictorFernandezResume.docx"
+            class="contact-links__resume"
+            download
+          >
+            Download Resume
+          </a>
+          <a
+            href="https://github.com/xrawvelocity"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-links__github"
+          />
+        </div> */}
 
         <form
           class="contact-form"

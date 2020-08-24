@@ -239,7 +239,7 @@ body::-webkit-scrollbar-thumb {
       .landing-heading {
         width: 100%; } }
     .landing-heading-top-title {
-      font-size: 5rem;
+      font-size: 6.5rem;
       animation: moveInBottom 1s ease 0.75s;
       animation-fill-mode: backwards; }
       @media only screen and (max-width: 90em) {
@@ -1200,3 +1200,52 @@ body::-webkit-scrollbar-thumb {
     .youtube-video {
       height: 200px;
       width: 90vw; } }
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  align-items: center;
+  font-size: 2rem;
+  color: #f7f7e7;
+  padding: 3rem 0 6rem; }
+  .footer-contact {
+    width: auto;
+    display: flex; }
+    .footer-contact > *:not(:first-child) {
+      margin-top: 1.5rem; }
+  .footer a {
+    color: rgba(10, 161, 231, 0.972); }
+    .footer a:hover {
+      cursor: pointer; }
+  .footer-links {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 44em) {
+      .footer-links {
+        width: 40%; } }
+    .footer-links > * {
+      font-size: 4rem;
+      transition: all 0.2s ease-out;
+      padding: 1rem; }
+    .footer-links_linkedin, .footer-links_linkedin:link, .footer-links_linkedin:visited {
+      color: #0073b1;
+      margin-right: 5rem; }
+      @media only screen and (max-width: 44em) {
+        .footer-links_linkedin, .footer-links_linkedin:link, .footer-links_linkedin:visited {
+          margin-right: 2rem; } }
+      .footer-links_linkedin:hover, .footer-links_linkedin:link:hover, .footer-links_linkedin:visited:hover {
+        cursor: pointer;
+        color: #0083ca; }
+    .footer-links_github, .footer-links_github:link, .footer-links_github:visited {
+      color: #ddd;
+      margin-right: 5rem; }
+      @media only screen and (max-width: 44em) {
+        .footer-links_github, .footer-links_github:link, .footer-links_github:visited {
+          margin-right: 2rem; } }
+      .footer-links_github:hover, .footer-links_github:link:hover, .footer-links_github:visited:hover {
+        cursor: pointer;
+        color: #fff; }

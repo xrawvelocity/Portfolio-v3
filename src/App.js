@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Work from "./components/Work";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default class App extends React.Component {
 
@@ -22,6 +23,7 @@ export default class App extends React.Component {
         <Work />
         <About />
         <Contact />
+        <Footer />
 
       </main>
     );

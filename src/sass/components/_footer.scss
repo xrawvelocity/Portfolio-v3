@@ -1,0 +1,80 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  align-items: center;
+  font-size: 2rem;
+  color: $white;
+  padding: 3rem 0 6rem;
+
+  &-contact {
+    width: auto;
+    display: flex;
+    & > *:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  & a {
+    color: rgba(10, 161, 231, 0.972);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &-links {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(phone) {
+      width: 40%;
+    }
+
+    & > * {
+      font-size: 4rem;
+      transition: all 0.2s ease-out;
+      padding: 1rem;
+    }
+
+    &_linkedin {
+      &,
+      &:link,
+      &:visited {
+        color: #0073b1;
+        margin-right: 5rem;
+
+        @include respond(phone) {
+          margin-right: 2rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: #0083ca;
+        }
+      }
+    }
+
+    &_github {
+      &,
+      &:link,
+      &:visited {
+        color: #ddd;
+
+        margin-right: 5rem;
+
+        @include respond(phone) {
+          margin-right: 2rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
