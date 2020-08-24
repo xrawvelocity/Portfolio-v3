@@ -915,9 +915,8 @@ body::-webkit-scrollbar-thumb {
       display: flex;
       flex-direction: column;
       position: relative;
-      margin-bottom: 5rem;
+      margin-bottom: 65px;
       /* LABEL ======================================= */
-      /* active state */
       /* BOTTOM BARS ================================= */
       /* active state */
       /* HIGHLIGHTER ================================== */
@@ -940,23 +939,18 @@ body::-webkit-scrollbar-thumb {
         .contact-form-group:focus-within .contact-form-group__label {
           transform: translateY(-3.5rem); }
       .contact-form-group__input:not(:placeholder-shown) + .contact-form-group__label {
-        transform: translateY(-3.5rem); }
+        transform: translateY(-3.5rem);
+        background-color: #fff; }
       .contact-form-group__label {
         color: #999;
         font-size: 18px;
         font-weight: normal;
         position: absolute;
         pointer-events: none;
-        left: 5px;
-        top: 10px;
+        text-align: center;
         transition: 0.2s ease all;
         -moz-transition: 0.2s ease all;
         -webkit-transition: 0.2s ease all; }
-      .contact-form-group__input:focus ~ label,
-      .contact-form-group__input:valid ~ label {
-        top: -40px;
-        font-size: 20px;
-        color: white; }
       .contact-form-group__input:placeholder-shown ~ label {
         color: red; }
       .contact-form-group__bar {
@@ -989,7 +983,8 @@ body::-webkit-scrollbar-thumb {
         top: 25%;
         left: 0;
         pointer-events: none;
-        opacity: 0.5; }
+        opacity: 0.5;
+        z-index: -100000; }
       .contact-form-group__input:focus ~ .contact-form-group__highlight {
         -webkit-animation: inputHighlighter 0.3s ease;
         -moz-animation: inputHighlighter 0.3s ease;

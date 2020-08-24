@@ -145,7 +145,7 @@
       display: flex;
       flex-direction: column;
       position: relative;
-      margin-bottom: 5rem;
+      margin-bottom: 65px;
 
       &::after {
         content: "";
@@ -173,6 +173,7 @@
 
       &__input:not(:placeholder-shown) + &__label {
         transform: translateY(-3.5rem);
+        background-color: #fff;
       }
 
       /* LABEL ======================================= */
@@ -182,20 +183,19 @@
         font-weight: normal;
         position: absolute;
         pointer-events: none;
-        left: 5px;
-        top: 10px;
+        text-align: center;
         transition: 0.2s ease all;
         -moz-transition: 0.2s ease all;
         -webkit-transition: 0.2s ease all;
       }
 
-      /* active state */
-      &__input:focus ~ label,
-      &__input:valid ~ label {
-        top: -40px;
-        font-size: 20px;
-        color: white;
-      }
+      // /* active state */
+      // &__input:focus ~ label,
+      // &__input:valid ~ label {
+      //   top: -40px;
+      //   font-size: 20px;
+      //   color: white;
+      // }
 
       &__input:placeholder-shown ~ label {
         color: red;
@@ -243,6 +243,7 @@
         left: 0;
         pointer-events: none;
         opacity: 0.5;
+        z-index: -100000;
       }
 
       /* active state */
