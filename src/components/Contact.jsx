@@ -15,27 +15,7 @@ export default class Contact extends Component {
           </p>
         </div>
 
-        <div class="contact-links">
-          <a
-            href="https://linkedin.com/in/victor--fernandez"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-links__linkedin"
-          />
-          <a
-            href="./files/VictorFernandezResume.docx"
-            class="contact-links__resume"
-            download
-          >
-            Download Resume
-          </a>
-          <a
-            href="https://github.com/xrawvelocity"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-links__github"
-          />
-        </div>
+        
 
         <form
           class="contact-form"
@@ -46,61 +26,49 @@ export default class Contact extends Component {
             <input
               class="contact-form-group__input"
               type="text"
-              placeholder=""
+              placeholder=" "
               name="name"
               id="name"
               required
             />
-            <span className="contact-form-group__highlight"></span>
-            <span className="contact-form-group__bar"></span>
             <label class="contact-form-group__label" for="name">
               Name
             </label>
+            <span className="contact-form-group__highlight"></span>
+            <span className="contact-form-group__bar"></span>
+            
           </div>
 
           <div class="contact-form-group">
             <input
               class="contact-form-group__input"
               type="email"
-              placeholder=""
+              placeholder=" "
               name="_replyto"
               id="email"
               required
             />
-            <span className="contact-form-group__highlight"></span>
-            <span className="contact-form-group__bar"></span>
             <label class="contact-form-group__label" for="email">
               Email
             </label>
-          </div>
-
-          <div class="contact-form-group">
-            <input
-              class="contact-form-group__input"
-              type="text"
-              placeholder=""
-              name="company"
-              id="company"
-            />
             <span className="contact-form-group__highlight"></span>
             <span className="contact-form-group__bar"></span>
-            <label class="contact-form-group__label" for="company">
-              Company/Organization
-            </label>
+            
           </div>
 
           <div class="contact-form-group">
             <input
               class="contact-form-group__input"
               name="message"
-              placeholder=""
+              placeholder=" "
               id="message"
             />
-            <span className="contact-form-group__highlight"></span>
-            <span className="contact-form-group__bar"></span>
             <label class="contact-form-group__label" for="message">
               Message
             </label>
+            <span className="contact-form-group__highlight"></span>
+            <span className="contact-form-group__bar"></span>
+            
           </div>
           <button class="contact-form-button" type="submit">
             Send email

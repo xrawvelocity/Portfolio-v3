@@ -21,7 +21,7 @@ export default class Home extends Component {
           <div className="landing-heading-top">
             <h2 className="landing-heading-top-title">
               Hi! I'm Victor, a freelance full-stack web developer based in
-              Miami, FL.
+              the United States.
             </h2>
             <p className="landing-heading-top-subtitle">
               I craft creative and result-oriented websites for forward-thinking

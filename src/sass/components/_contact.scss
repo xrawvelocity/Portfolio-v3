@@ -173,13 +173,13 @@
 
       &__input:not(:placeholder-shown) + &__label {
         transform: translateY(-3.5rem);
-        background-color: #fff;
       }
+      
 
       /* LABEL ======================================= */
       &__label {
         color: #999;
-        font-size: 18px;
+        font-size: 3rem;
         font-weight: normal;
         position: absolute;
         pointer-events: none;
@@ -197,8 +197,11 @@
       //   color: white;
       // }
 
-      &__input:placeholder-shown ~ label {
+      &__input:placeholder-shown ~ &__label::after {
+        content: "*";
         color: red;
+        margin-left: 10px;
+        font-size: 3rem;
       }
 
       /* BOTTOM BARS ================================= */
@@ -214,7 +217,7 @@
         width: 0;
         bottom: 1px;
         position: absolute;
-        background-color: #197ee6;
+        background-color: #aaa;
         transition: 0.2s ease all;
         -moz-transition: 0.2s ease all;
         -webkit-transition: 0.2s ease all;

@@ -939,11 +939,10 @@ body::-webkit-scrollbar-thumb {
         .contact-form-group:focus-within .contact-form-group__label {
           transform: translateY(-3.5rem); }
       .contact-form-group__input:not(:placeholder-shown) + .contact-form-group__label {
-        transform: translateY(-3.5rem);
-        background-color: #fff; }
+        transform: translateY(-3.5rem); }
       .contact-form-group__label {
         color: #999;
-        font-size: 18px;
+        font-size: 3rem;
         font-weight: normal;
         position: absolute;
         pointer-events: none;
@@ -951,8 +950,11 @@ body::-webkit-scrollbar-thumb {
         transition: 0.2s ease all;
         -moz-transition: 0.2s ease all;
         -webkit-transition: 0.2s ease all; }
-      .contact-form-group__input:placeholder-shown ~ label {
-        color: red; }
+      .contact-form-group__input:placeholder-shown ~ .contact-form-group__label::after {
+        content: "*";
+        color: red;
+        margin-left: 10px;
+        font-size: 3rem; }
       .contact-form-group__bar {
         position: relative;
         display: block;
@@ -963,7 +965,7 @@ body::-webkit-scrollbar-thumb {
         width: 0;
         bottom: 1px;
         position: absolute;
-        background-color: #197ee6;
+        background-color: #aaa;
         transition: 0.2s ease all;
         -moz-transition: 0.2s ease all;
         -webkit-transition: 0.2s ease all; }
