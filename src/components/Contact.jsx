@@ -51,6 +51,8 @@ export default class Contact extends Component {
               id="name"
               required
             />
+            <span className="contact-form-group__highlight"></span>
+            <span className="contact-form-group__bar"></span>
             <label class="contact-form-group__label" for="name">
               Name
             </label>
@@ -65,6 +67,8 @@ export default class Contact extends Component {
               id="email"
               required
             />
+            <span className="contact-form-group__highlight"></span>
+            <span className="contact-form-group__bar"></span>
             <label class="contact-form-group__label" for="email">
               Email
             </label>
@@ -78,6 +82,8 @@ export default class Contact extends Component {
               name="company"
               id="company"
             />
+            <span className="contact-form-group__highlight"></span>
+            <span className="contact-form-group__bar"></span>
             <label class="contact-form-group__label" for="company">
               Company/Organization
             </label>
@@ -90,12 +96,14 @@ export default class Contact extends Component {
               placeholder=""
               id="message"
             />
+            <span className="contact-form-group__highlight"></span>
+            <span className="contact-form-group__bar"></span>
             <label class="contact-form-group__label" for="message">
               Message
             </label>
           </div>
           <button class="contact-form-button" type="submit">
-            Submit
+            Send email
           </button>
         </form>
       </section>
