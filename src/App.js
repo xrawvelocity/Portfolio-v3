@@ -9,9 +9,9 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <main className="landing">
+      <main id="top" className="landing">
         <nav className="landing-top">
-          <a href="#" className="landing-top-logo ">VD</a>
+          <a href="#top" className="landing-top-logo ">VD</a>
           <div className="landing-top-nav">
             <a className="landing-top-nav-link" href="#work">Work</a>
             <a className="landing-top-nav-link" href="#about">About</a>
