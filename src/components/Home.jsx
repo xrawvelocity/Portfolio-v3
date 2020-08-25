@@ -34,6 +34,7 @@ export default class Home extends Component {
           >
             Get In Touch
           </a>
+          <div class="scroll-down"></div>
         </div>
       </Fragment>
     );

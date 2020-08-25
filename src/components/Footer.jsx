@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebookF,
-  faInstagram,
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
