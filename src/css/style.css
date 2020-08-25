@@ -179,14 +179,14 @@ body::-webkit-scrollbar-thumb {
     mix-blend-mode: exclusion; }
     @media only screen and (max-width: 44em) {
       .landing-top {
-        padding: 0 10%; } }
-    .landing-top-logo {
+        padding: 30px 10% 0; } }
+    .landing-top-logo, .footer-logo {
       font-family: "modernplate";
       font-size: 4rem; }
-      .landing-top-logo, .landing-top-logo:link, .landing-top-logo:visited {
+      .landing-top-logo, .footer-logo, .landing-top-logo:link, .footer-logo:link, .landing-top-logo:visited, .footer-logo:visited {
         text-decoration: none;
         color: #f7f7f2; }
-      .landing-top-logo:hover {
+      .landing-top-logo:hover, .footer-logo:hover {
         cursor: pointer; }
     .landing-top-nav {
       display: flex;
@@ -811,6 +811,9 @@ body::-webkit-scrollbar-thumb {
 
 #contact {
   height: 100px; }
+  @media only screen and (max-width: 44em) {
+    #contact {
+      height: 50px; } }
 
 .contact {
   display: flex;
@@ -940,9 +943,9 @@ body::-webkit-scrollbar-thumb {
         .contact-form-group:focus-within::after {
           transform: scaleX(1); }
         .contact-form-group:focus-within .contact-form-group__label {
-          transform: translateY(-3.5rem); }
+          transform: translateY(-5rem); }
       .contact-form-group__input:not(:placeholder-shown) + .contact-form-group__label {
-        transform: translateY(-3.5rem); }
+        transform: translateY(-5rem); }
       .contact-form-group__label {
         color: #999;
         font-size: 3rem;
@@ -1203,7 +1206,7 @@ body::-webkit-scrollbar-thumb {
   margin: 5rem auto 10rem; }
   @media only screen and (max-width: 44em) {
     .youtube-video {
-      height: 200px;
+      height: 300px;
       width: 90vw; } }
 
 .footer {
@@ -1215,11 +1218,21 @@ body::-webkit-scrollbar-thumb {
   font-size: 2rem;
   color: #f7f7e7;
   padding: 3rem 0 6rem; }
+  @media only screen and (max-width: 44em) {
+    .footer {
+      flex-direction: column; } }
+  @media only screen and (max-width: 44em) {
+    .footer-logo {
+      display: none; } }
   .footer-contact {
     width: 33%;
-    text-align: center; }
+    text-align: center;
+    font-size: 2.8rem; }
+    @media only screen and (max-width: 44em) {
+      .footer-contact {
+        width: 100%; } }
   .footer a {
-    color: rgba(10, 161, 231, 0.972);
+    color: #0029f5;
     padding: 3rem 0; }
     .footer a:hover {
       cursor: pointer; }
@@ -1230,7 +1243,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center; }
     @media only screen and (max-width: 44em) {
       .footer-links {
-        width: 40%; } }
+        width: 100%;
+        margin-bottom: 3rem; } }
     .footer-links > * {
       font-size: 4rem;
       transition: all 0.2s ease-out;

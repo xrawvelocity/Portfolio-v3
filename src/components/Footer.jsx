@@ -37,7 +37,7 @@ export default class Footer extends Component {
             Resume
           </a>
         </div>
-        <a href="#" className="landing-top-logo ">
+        <a href="#" className="footer-logo">
           VD
         </a>
         <div className="footer-contact">

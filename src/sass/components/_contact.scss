@@ -1,5 +1,9 @@
 #contact {
   height: 100px;
+
+  @include respond(phone) {
+    height: 50px;
+  }
 }
 
 .contact {
@@ -171,12 +175,12 @@
         }
 
         & .contact-form-group__label {
-          transform: translateY(-3.5rem);
+          transform: translateY(-5rem);
         }
       }
 
       &__input:not(:placeholder-shown) + &__label {
-        transform: translateY(-3.5rem);
+        transform: translateY(-5rem);
       }
       
 

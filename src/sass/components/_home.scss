@@ -30,7 +30,7 @@
     mix-blend-mode: exclusion;
 
     @include respond(phone) {
-      padding: 0 10%;
+      padding: 30px 10% 0;
     }
 
     &-logo {
