@@ -3,7 +3,6 @@ import Home from "./components/Home";
 import Work from "./components/Work";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import { Navigation } from "./components/Navigation";
 
 const App = () => {
@@ -14,7 +13,6 @@ const App = () => {
             <Work />
             <About />
             <Contact />
-            {/* <Footer /> */}
         </main>
     );
 };
