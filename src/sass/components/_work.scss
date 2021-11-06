@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 10rem 10%;
     color: #f7f7f2;
     animation: fadeIn 0.5s ease-out 0.5s;
     animation-fill-mode: backwards;
@@ -20,6 +20,7 @@
             grid-template-columns: repeat(auto-fit, 300px);
             width: 80%;
         }
+
         &-card {
             perspective: 120rem;
             -moz-perspective: 80rem;
