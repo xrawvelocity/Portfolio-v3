@@ -30,6 +30,7 @@ const Work = () => {
                         }
                         technologies={[
                             { logo: reactLogo, name: "React JS" },
+                            { logo: materialUIlogo, name: "Material UI" },
                             { logo: firebaseLogo, name: "Firebase" },
                             { logo: sassLogo, name: "SASS" },
                         ]}
@@ -52,7 +53,7 @@ const Work = () => {
                                 name: "Commerce JS",
                             },
                             {
-                                logo: "https://logos-world.net/wp-content/uploads/2021/03/Stripe-Emblem.png",
+                                logo: "https://stripe.com/img/v3/home/twitter.png",
                                 name: "Stripe JS",
                             },
                         ]}
