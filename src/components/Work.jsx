@@ -33,7 +33,30 @@ const Work = () => {
                             { logo: firebaseLogo, name: "Firebase" },
                             { logo: sassLogo, name: "SASS" },
                         ]}
-                        demo={""}
+                        demo={"https://www.therusticdude.com"}
+                        code={""}
+                    />
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <Project
+                        image={micturbobg}
+                        title={"Mic Turbo"}
+                        description={
+                            "A custom e-commerce site for a mechanic shop with payment processing capabilities."
+                        }
+                        technologies={[
+                            { logo: reactLogo, name: "React JS" },
+                            { logo: materialUIlogo, name: "Material UI" },
+                            {
+                                logo: "https://res.cloudinary.com/practicaldev/image/fetch/s--ITpGWFxn--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/2134/d92f50cd-7ad7-48ba-9970-7abecdeb2194.png",
+                                name: "Commerce JS",
+                            },
+                            {
+                                logo: "https://logos-world.net/wp-content/uploads/2021/03/Stripe-Emblem.png",
+                                name: "Stripe JS",
+                            },
+                        ]}
+                        demo={"https://micturbo.netlify.app"}
                         code={""}
                     />
                 </Grid>
@@ -50,26 +73,7 @@ const Work = () => {
                             { logo: nodeLogo, name: "Node JS" },
                             { logo: mongoLogo, name: "MongoDB" },
                         ]}
-                        demo={""}
-                        code={""}
-                    />
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Project
-                        image={micturbobg}
-                        title={"Mic Turbo"}
-                        description={
-                            "A custom e-commerce site for a mechanic shop with payment processing capabilities."
-                        }
-                        technologies={[
-                            { logo: reactLogo, name: "React JS" },
-                            { logo: materialUIlogo, name: "Material UI" },
-                            {
-                                logo: "https://res.cloudinary.com/practicaldev/image/fetch/s--ITpGWFxn--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/2134/d92f50cd-7ad7-48ba-9970-7abecdeb2194.png",
-                                name: "CommerceJS",
-                            },
-                        ]}
-                        demo={""}
+                        demo={"https://www.tracktrade.co"}
                         code={""}
                     />
                 </Grid>
