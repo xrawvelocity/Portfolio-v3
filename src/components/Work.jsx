@@ -40,6 +40,23 @@ const Work = () => {
                 </Grid>
                 <Grid item xs={12} md={4}>
                     <Project
+                        image={tracktradebg}
+                        title={"Track Trade"}
+                        description={
+                            "A personal project. Social media for Foreign Exchange traders that allows users to visualize their performance using charts. "
+                        }
+                        technologies={[
+                            { logo: reactLogo, name: "React JS" },
+                            { logo: reduxLogo, name: "Redux" },
+                            { logo: nodeLogo, name: "Node JS" },
+                            { logo: mongoLogo, name: "MongoDB" },
+                        ]}
+                        demo={"https://www.tracktrade.co"}
+                        code={""}
+                    />
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <Project
                         image={micturbobg}
                         title={"Mic Turbo"}
                         description={
@@ -58,23 +75,6 @@ const Work = () => {
                             },
                         ]}
                         demo={"https://micturbo.netlify.app"}
-                        code={""}
-                    />
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Project
-                        image={tracktradebg}
-                        title={"Track Trade"}
-                        description={
-                            "A personal project. Social media for Foreign Exchange traders that allows users to visualize their performance using charts. "
-                        }
-                        technologies={[
-                            { logo: reactLogo, name: "React JS" },
-                            { logo: reduxLogo, name: "Redux" },
-                            { logo: nodeLogo, name: "Node JS" },
-                            { logo: mongoLogo, name: "MongoDB" },
-                        ]}
-                        demo={"https://www.tracktrade.co"}
                         code={""}
                     />
                 </Grid>
