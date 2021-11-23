@@ -129,7 +129,7 @@ const Project = ({ image, title, description, technologies, demo, code }) => {
                                     color: "#fff !important",
                                 }}
                             >
-                                {title.includes("Track Trade")
+                                {!title.includes("Track Trade")
                                     ? "Visit Site"
                                     : "Coming Soon"}
                             </Button>
