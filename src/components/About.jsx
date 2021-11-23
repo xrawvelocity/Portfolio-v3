@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import React, { Component } from "react";
+import React from "react";
 import Flex from "./Flex";
 
 import htmllogo from "../images/logos/htmllogo.png";
@@ -41,6 +41,7 @@ const About = () => {
                 <Flex sx={{ alignItems: "center", mb: "1.5rem" }}>
                     <img
                         src={skill.image}
+                        alt={skill.name}
                         style={{
                             height: "30px",
                             width: "30px",

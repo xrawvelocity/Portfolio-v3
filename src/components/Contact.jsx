@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import { TextField } from "@mui/material";
-import React, { Component } from "react";
+import React from "react";
 
 const Contact = () => {
     const ContactInput = ({ name, label, type = "text" }) => {
