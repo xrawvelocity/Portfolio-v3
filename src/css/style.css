@@ -115,7 +115,7 @@ html {
       font-size: 40%; } }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased; }
 
 a:link,
@@ -149,6 +149,9 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #ccc; }
+
+.MuiTooltip-tooltip {
+  font-size: 1.4rem !important; }
 
 .landing {
   height: auto;
@@ -211,7 +214,7 @@ body::-webkit-scrollbar-thumb {
           text-decoration: none;
           color: #f7f7f2; }
         .landing-top-nav-link_work {
-          margin-left: 10rem; }
+          margin-left: 15rem; }
         .landing-top-nav-link_selected, .landing-top-nav-link_selected:link, .landing-top-nav-link_selected:visited {
           margin-left: 4rem;
           text-decoration: none;
@@ -889,11 +892,12 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #eee;
-  color: #111;
+  background-color: #111;
+  color: #eee;
   animation: fadeIn 0.5s ease-out 0.5s;
   animation-fill-mode: backwards;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  padding-bottom: 5rem; }
   .contact-text {
     display: flex;
     flex-direction: column;
@@ -1209,77 +1213,6 @@ body::-webkit-scrollbar-thumb {
           width: 35px;
           display: inline-block;
           margin-right: 1rem; }
-          .about-skills-list-each-image-reactJS {
-            background-image: url("../images/logos/reactjslogo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-expressJS {
-            background-image: url("../images/logos/expressjslogo.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #fff; }
-          .about-skills-list-each-image-SASS {
-            background-image: url("../images/logos/sasslogo.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-tailwindCSS {
-            background-image: url("../images/logos/tailwindcsslogo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-cheerio {
-            background-image: url("../images/logos/cheeriologo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-ajax {
-            background-image: url("../images/logos/ajaxlogo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-mongoDB {
-            background-image: url("../images/logos/mongodblogo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-firebase {
-            background-image: url("../images/logos/firebase.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: top; }
-          .about-skills-list-each-image-nodeJS {
-            background-image: url("../images/logos/nodejslogo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-redux {
-            background-image: url("../images/logos/reduxlogo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-materialUI {
-            background-image: url("../images/logos/materialuilogo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-HTML {
-            background-image: url("../images/logos/htmllogo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-CSS {
-            background-image: url("../images/logos/csslogo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
-          .about-skills-list-each-image-javascript {
-            background-image: url("../images/logos/javascript.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; }
 
 .youtube-video {
   height: 100%;
@@ -1347,7 +1280,17 @@ body::-webkit-scrollbar-thumb {
         cursor: pointer;
         color: #fff; }
     .footer-links_email, .footer-links_email:link, .footer-links_email:visited {
-      color: #ddd; }
+      color: #ddd;
+      margin-right: 2.5rem; }
+      @media only screen and (max-width: 44em) {
+        .footer-links_email, .footer-links_email:link, .footer-links_email:visited {
+          margin-right: 2rem; } }
       .footer-links_email:hover, .footer-links_email:link:hover, .footer-links_email:visited:hover {
+        cursor: pointer;
+        color: #fff; }
+    .footer-links_resume, .footer-links_resume:link, .footer-links_resume:visited {
+      color: #ddd;
+      margin-bottom: 3px; }
+      .footer-links_resume:hover, .footer-links_resume:link:hover, .footer-links_resume:visited:hover {
         cursor: pointer;
         color: #fff; }

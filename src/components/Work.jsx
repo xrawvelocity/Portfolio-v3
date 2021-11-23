@@ -3,8 +3,9 @@ import React from "react";
 import Project from "./Project";
 
 import rusticdudebg from "../images/rusticdudebg.png";
-import micturbobg from "../images/micturbobg.png";
 import tracktradebg from "../images/tracktradebg.png";
+import micturbobg from "../images/micturbobg.png";
+import luisavilabg from "../images/luisavilabg.png";
 
 import reactLogo from "../images/logos/reactjslogo.png";
 import materialUIlogo from "../images/logos/materialuilogo.png";
@@ -21,12 +22,12 @@ const Work = () => {
                 Work
             </h2>
             <Grid container spacing={6}>
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={3}>
                     <Project
                         image={rusticdudebg}
-                        title={"The Rustic Dude"}
+                        title={"The Rustic Dude | Portfolio"}
                         description={
-                            "A personal portfolio for a woodworking company with a hidden admin route to manage the products being displayed."
+                            "A portfolio for a woodworking company with a hidden admin route to manage the products being displayed."
                         }
                         technologies={[
                             { logo: reactLogo, name: "React JS" },
@@ -35,15 +36,15 @@ const Work = () => {
                             { logo: sassLogo, name: "SASS" },
                         ]}
                         demo={"https://www.therusticdude.com"}
-                        code={""}
+                        code={"https://github.com/xrawvelocity/theRusticDude"}
                     />
                 </Grid>
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={3}>
                     <Project
                         image={tracktradebg}
-                        title={"Track Trade"}
+                        title={"Track Trade | Software"}
                         description={
-                            "A personal project. Social media for Foreign Exchange traders that allows users to visualize their performance using charts. "
+                            "A personal project started on Feb 2020. Social media for Foreign Exchange traders that allows users to visualize their performance using charts and more. "
                         }
                         technologies={[
                             { logo: reactLogo, name: "React JS" },
@@ -52,15 +53,15 @@ const Work = () => {
                             { logo: mongoLogo, name: "MongoDB" },
                         ]}
                         demo={"https://www.tracktrade.co"}
-                        code={""}
+                        code={"https://github.com/TrackTraders/TrackTrade"}
                     />
                 </Grid>
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={3}>
                     <Project
                         image={micturbobg}
-                        title={"Mic Turbo"}
+                        title={"Mic Turbo | E-Commerce"}
                         description={
-                            "A custom e-commerce site for a mechanic shop with payment processing capabilities."
+                            "A custom responsive e-commerce site for a mechanic shop with payment processing capabilities."
                         }
                         technologies={[
                             { logo: reactLogo, name: "React JS" },
@@ -75,7 +76,26 @@ const Work = () => {
                             },
                         ]}
                         demo={"https://micturbo.netlify.app"}
-                        code={""}
+                        code={"https://github.com/xrawvelocity/micturbo"}
+                    />
+                </Grid>
+                <Grid item xs={12} md={3}>
+                    <Project
+                        image={luisavilabg}
+                        title={"Luis Avila | Portfolio"}
+                        description={
+                            "This is a simple portfolio for an actor that allows visitors to get to know him and his work"
+                        }
+                        technologies={[
+                            { logo: reactLogo, name: "React JS" },
+                            { logo: materialUIlogo, name: "Material UI" },
+                            {
+                                logo: sassLogo,
+                                name: "SASS",
+                            },
+                        ]}
+                        demo={"https://www.luisofavila.com"}
+                        code={"https://github.com/xrawvelocity/luisofavila"}
                     />
                 </Grid>
             </Grid>

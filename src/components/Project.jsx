@@ -36,7 +36,10 @@ const Project = ({ image, title, description, technologies, demo, code }) => {
                         <img
                             src={each.logo}
                             alt={each.name}
-                            style={{ height: "100%", width: "100%" }}
+                            style={{
+                                height: "100%",
+                                width: "100%",
+                            }}
                         />
                     </Box>
                     <Typography
@@ -62,12 +65,16 @@ const Project = ({ image, title, description, technologies, demo, code }) => {
                     height="225"
                     image={image}
                     alt={title}
-                    sx={{ borderBottom: "1px solid #111" }}
+                    sx={{
+                        borderBottom: "1px solid #111",
+                        objectPosition: title.includes("Track Trade")
+                            ? "left"
+                            : "center",
+                    }}
                 />
                 <CardContent sx={{ p: "3rem" }}>
                     <Typography
                         sx={{
-                            mb: "2rem",
                             pb: ".5rem",
                             width: "fit-content",
                             fontSize: "18px",
@@ -77,53 +84,81 @@ const Project = ({ image, title, description, technologies, demo, code }) => {
                     >
                         {title}
                     </Typography>
-                    <Typography
+                    {/* <Typography
                         gutterBottom
                         variant="h5"
                         sx={{ fontSize: "16px" }}
                     >
                         {description}
-                    </Typography>
+                    </Typography> */}
                     <Flex
                         sx={{
                             flexDirection: "column",
-                            mt: "1rem",
+                            justifyContent: "space-between",
+                            height: "300px",
                         }}
                     >
-                        {showTechnologies()}
+                        <Flex
+                            sx={{
+                                flexDirection: "column",
+                                mt: "1rem",
+                            }}
+                        >
+                            {showTechnologies()}
+                        </Flex>
+                        <CardActions
+                            sx={{
+                                px: "0",
+                                pt: { xs: "5rem", md: "3rem" },
+                                justifyContent: {
+                                    xs: "center",
+                                    md: "flex-start",
+                                },
+                            }}
+                        >
+                            <Button
+                                component="a"
+                                href={demo}
+                                rel="noreferrer"
+                                variant="contained"
+                                target="_blank"
+                                disabled={title.includes("Track Trade")}
+                                color="primary"
+                                sx={{
+                                    fontSize: { xs: "12px", md: "16px" },
+                                    color: "#fff !important",
+                                }}
+                            >
+                                {title.includes("Track Trade")
+                                    ? "Visit Site"
+                                    : "Coming Soon"}
+                            </Button>
+                            <Button
+                                component="a"
+                                href={code}
+                                rel="noreferrer"
+                                variant="contained"
+                                target="_blank"
+                                color="primary"
+                                sx={{
+                                    fontSize: { xs: "12px", md: "16px" },
+                                    ml: "16px !important",
+                                }}
+                            >
+                                View Code
+                            </Button>
+                            {/* <Button
+                                onClick={() => setModalOpen(true)}
+                                color="primary"
+                                sx={{
+                                    fontSize: { xs: "12px", md: "16px" },
+                                    ml: "16px !important",
+                                }}
+                            >
+                                More Info
+                            </Button> */}
+                        </CardActions>
                     </Flex>
-                    <CardActions
-                        sx={{
-                            px: "0",
-                            pt: { xs: "5rem", md: "3rem" },
-                            justifyContent: { xs: "center", md: "flex-start" },
-                        }}
-                    >
-                        <Button
-                            component="a"
-                            href={demo}
-                            rel="noreferrer"
-                            variant="contained"
-                            target="_blank"
-                            color="primary"
-                            sx={{
-                                fontSize: { xs: "12px", md: "16px" },
-                                color: "#fff !important",
-                            }}
-                        >
-                            Visit Site
-                        </Button>
-                        <Button
-                            onClick={() => setModalOpen(true)}
-                            color="primary"
-                            sx={{
-                                fontSize: { xs: "12px", md: "16px" },
-                                ml: "16px !important",
-                            }}
-                        >
-                            More Info
-                        </Button>
-                    </CardActions>
                 </CardContent>
             </Card>
             <Modal
@@ -137,8 +172,8 @@ const Project = ({ image, title, description, technologies, demo, code }) => {
                 <Fade in={modalOpen}>
                     <Paper
                         sx={{
-                            height: "50%",
-                            width: "50%",
+                            height: "80%",
+                            width: "75%",
                             position: "absolute",
                             top: "50%",
                             left: "50%",
