@@ -84,13 +84,13 @@ const Project = ({ image, title, description, technologies, demo, code }) => {
                     >
                         {title}
                     </Typography>
-                    {/* <Typography
+                    <Typography
                         gutterBottom
                         variant="h5"
                         sx={{ fontSize: "16px" }}
                     >
                         {description}
-                    </Typography> */}
+                    </Typography>
                     <Flex
                         sx={{
                             flexDirection: "column",
