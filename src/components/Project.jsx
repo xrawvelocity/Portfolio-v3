@@ -137,7 +137,6 @@ const Project = ({ image, title, description, technologies, demo, code }) => {
                                 component="a"
                                 href={code}
                                 rel="noreferrer"
-                                variant="contained"
                                 target="_blank"
                                 color="primary"
                                 sx={{
