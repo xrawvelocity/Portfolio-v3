@@ -108,8 +108,8 @@ const About = () => {
                         sx={{
                             width: "100%",
                             fontSize: { xs: "15px", md: "24px" },
-                            mb: { xs: "0", md: "5rem" },
-                            mt: { xs: "0", md: "3rem" },
+                            mb: { xs: "3rem", md: "5rem" },
+                            mt: { xs: "2rem", md: "3rem" },
                         }}
                     >
                         Programmer born in Cuba, but raised in Miami. Solving
