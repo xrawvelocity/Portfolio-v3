@@ -88,6 +88,7 @@ export const Navigation = () => {
                     href="https://linkedin.com/in/victor--fernandez"
                     style={{
                         color: "#ddd",
+                        textDecoration: "none",
                         margin: "1rem 0",
                         fontSize: "4rem",
                     }}
@@ -118,6 +119,7 @@ export const Navigation = () => {
                     href="https://github.com/xrawvelocity"
                     style={{
                         color: "#ddd",
+                        textDecoration: "none",
                         margin: "1rem 0",
                         fontSize: "4rem",
                     }}
@@ -148,6 +150,7 @@ export const Navigation = () => {
                     href="mailto:fernandezvictordev@gmail.com"
                     style={{
                         color: "#ddd",
+                        textDecoration: "none",
                         margin: "1rem 0",
                         fontSize: "4rem",
                     }}
@@ -178,6 +181,7 @@ export const Navigation = () => {
                     href="./files/VictorFernandezResume.docx"
                     style={{
                         color: "#ddd",
+                        textDecoration: "none",
                         margin: "1rem 0",
                         fontSize: "4rem",
                     }}
