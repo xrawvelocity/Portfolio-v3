@@ -122,16 +122,13 @@ const Project = ({ image, title, description, technologies, demo, code }) => {
                                 rel="noreferrer"
                                 variant="contained"
                                 target="_blank"
-                                disabled={title.includes("Track Trade")}
                                 color="primary"
                                 sx={{
                                     fontSize: { xs: "12px", md: "16px" },
                                     color: "#fff !important",
                                 }}
                             >
-                                {!title.includes("Track Trade")
-                                    ? "Visit Site"
-                                    : "Coming Soon"}
+                                Visit Site
                             </Button>
                             <Button
                                 component="a"
