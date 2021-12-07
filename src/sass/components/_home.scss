@@ -136,16 +136,15 @@
             &:link,
             &:visited {
                 text-decoration: none;
-                color: #f7f7f2;
+                color: #fff;
                 margin-top: 10%;
                 padding: 1.5rem 2rem;
                 font-weight: 500;
                 text-transform: uppercase;
-                background-color: #1976d2;
+                background-color: #0d65f1;
                 transition: all 0.3s ease;
 
                 &:hover {
-                    box-shadow: 0rem 1rem 1rem #111;
                     background-color: #1565c0;
                 }
 

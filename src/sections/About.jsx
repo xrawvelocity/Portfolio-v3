@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import Flex from "../components/Flex";
@@ -25,9 +25,6 @@ const About = () => {
         { name: "CSS", image: csslogo },
         { name: "SASS", image: sasslogo },
         { name: "Javascript", image: javascriptlogo },
-    ];
-
-    let frontEndSkills2 = [
         { name: "React JS", image: reactjslogo },
         { name: "Redux", image: reduxlogo },
         { name: "Material UI", image: materialuilogo },
@@ -41,26 +38,29 @@ const About = () => {
         { name: "Firebase", image: firebaselogo },
     ];
 
-    const showSkills = (skills) => {
-        return skills.map((skill) => {
-            return (
-                <Flex sx={{ alignItems: "center", mb: "1.5rem" }}>
-                    <img
-                        src={skill.image}
-                        alt={skill.name}
-                        style={{
-                            height: "30px",
-                            width: "30px",
-                            marginRight: "1.5rem",
-                        }}
-                    />
-                    <Typography sx={{ fontSize: "2.5rem" }}>
-                        {skill.name}
-                    </Typography>
-                </Flex>
-            );
-        });
+    const Skill = ({ each }) => {
+        return (
+            <Flex
+                sx={{
+                    alignItems: "center",
+                    justifyContent: "center",
+                    mb: { xs: "2.5rem", lg: "2rem", xl: "1.5rem" },
+                }}
+            >
+                <img
+                    src={each.image}
+                    alt={each.name}
+                    style={{
+                        height: "30px",
+                        width: "30px",
+                        marginRight: "1.5rem",
+                    }}
+                />
+                <Typography sx={{ fontSize: "2rem" }}>{each.name}</Typography>
+            </Flex>
+        );
     };
+
     return (
         <section className="about">
             <Title color="#000">About</Title>
@@ -102,7 +102,7 @@ const About = () => {
                                 fontSize: {
                                     xs: "15px",
                                     md: "18px",
-                                    lg: "20px",
+                                    lg: "18px",
                                     xl: "24px",
                                 },
 
@@ -113,12 +113,12 @@ const About = () => {
                             Programmer born in Cuba, but raised in Miami.
                             Solving problems with creative and efficient
                             solutions is what I'm best at. I've been coding
-                            since 2016 when I was in High School and it was
-                            always my dream to be a Software Engineer. I've
-                            taken countless online courses and I attended the
-                            Ironhack Miami Coding Bootcamp on January 2020. So
-                            far I've acquired 1 year of professional experience
-                            working at a fin tech company.
+                            since High School and it has always been my dream to
+                            be a Software Engineer. I attended the Ironhack
+                            Miami Coding Bootcamp on January 2020. So far I've
+                            acquired 1 year of professional experience working
+                            at a fin tech company where I built the entire front
+                            end for their software's admin and merchant portals.
                         </Typography>
                     </Flex>
                 </Flex>
@@ -128,7 +128,7 @@ const About = () => {
                         width: "100%",
                         p: { xs: "0 10%", xl: "0 10%" },
                         flexDirection: { xs: "column", md: "row" },
-                        alignItems: "center",
+                        alignItems: "flex-start",
                         justifyContent: "center",
                     }}
                 >
@@ -148,31 +148,22 @@ const About = () => {
                         >
                             <Typography
                                 sx={{
-                                    mb: "2.5rem",
+                                    mb: { xs: "4rem", lg: "2.5rem" },
                                     fontSize: "2.8rem",
                                     fontWeight: "600",
                                 }}
                             >
                                 Front End
                             </Typography>
-                            <Flex>
-                                <Flex
-                                    sx={{
-                                        flexDirection: "column",
-                                        mr: "2.5rem",
-                                    }}
-                                >
-                                    {showSkills(frontEndSkills)}
-                                </Flex>
-                                <Flex
-                                    sx={{
-                                        flexDirection: "column",
-                                        ml: "2.5rem",
-                                    }}
-                                >
-                                    {showSkills(frontEndSkills2)}
-                                </Flex>
-                            </Flex>
+                            <Grid container spacing={2}>
+                                {frontEndSkills.map((each) => {
+                                    return (
+                                        <Grid item xs={6} xl={3}>
+                                            <Skill each={each} />
+                                        </Grid>
+                                    );
+                                })}
+                            </Grid>
                         </Flex>
                     </Flex>
                     <Flex
@@ -180,6 +171,7 @@ const About = () => {
                             justifyContent: { xs: "center", md: "center" },
                             width: { xs: "100%", md: "50%" },
                             ml: { xs: "0", xl: "7rem" },
+                            mb: { xs: "7rem", md: "0" },
                         }}
                     >
                         <Flex
@@ -190,20 +182,22 @@ const About = () => {
                         >
                             <Typography
                                 sx={{
-                                    mb: "2.5rem",
+                                    mb: { xs: "4rem", lg: "2.5rem" },
                                     fontSize: "2.8rem",
                                     fontWeight: "600",
                                 }}
                             >
                                 Back End
                             </Typography>
-                            <Flex
-                                sx={{
-                                    flexDirection: "column",
-                                }}
-                            >
-                                {showSkills(backEndSkills)}
-                            </Flex>
+                            <Grid container spacing={2}>
+                                {backEndSkills.map((each) => {
+                                    return (
+                                        <Grid item xs={6}>
+                                            <Skill each={each} />
+                                        </Grid>
+                                    );
+                                })}
+                            </Grid>
                         </Flex>
                     </Flex>
                 </Flex>
