@@ -24,7 +24,7 @@ const Work = () => {
                     image={tracktradebg}
                     title={"Track Trade | Software"}
                     description={
-                        "A personal project started on Feb 2020. Social media for Foreign Exchange traders that allows users to visualize their performance using charts and more. "
+                        "Social media for Foreign Exchange traders that allows users to visualize their performance using charts and to share their trading ideas. "
                     }
                     started="February, 2020"
                     updated="December, 2021"

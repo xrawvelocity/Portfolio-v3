@@ -31,6 +31,10 @@ const Contact = () => {
                         fontSize: "18px !important",
                         color: "#fff",
                     },
+                    "& > div > textarea": {
+                        fontSize: "18px !important",
+                        color: "#fff",
+                    },
                     "& > div > fieldset": {
                         borderColor: "#fff !important",
                     },
