@@ -19,7 +19,10 @@ const Contact = () => {
                     height: "auto",
                     width: "100%",
                     margin: "1.5rem 0",
-                    "& > label": { fontSize: "16px !important", color: "#fff" },
+                    "& > label": {
+                        fontSize: "16px !important",
+                        color: "#fff !important",
+                    },
                     "& > div": {
                         "&:hover": {
                             "& > fieldset": {
