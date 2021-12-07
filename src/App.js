@@ -1,15 +1,15 @@
 import React from "react";
-import Home from "./components/Home";
-import Work from "./components/Work";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import Hero from "./sections/Hero";
+import Work from "./sections/Work";
+import About from "./sections/About";
+import Contact from "./sections/Contact";
 import { Navigation } from "./components/Navigation";
 
 const App = () => {
     return (
-        <main id="top" className="landing">
+        <main id="top">
             <Navigation />
-            <Home />
+            <Hero />
             <Work />
             <About />
             <Contact />

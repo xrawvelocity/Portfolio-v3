@@ -2,17 +2,8 @@
     height: auto;
     min-height: 100vh;
     width: 100vw;
-    background-size: 300% 300%;
-    background-image: linear-gradient(45deg, #343434, #000);
-    animation: gradientBG 12s cubic-bezier(0.7, 0, 0.2, 1) infinite;
-    font-weight: 500;
-    font-size: 3rem;
-
     padding-top: 5%;
-
-    @include respond(phone) {
-        background-size: 200% 200%;
-    }
+    @include bgAnim;
 
     &-top {
         display: flex;
@@ -26,7 +17,8 @@
         animation: moveInTop 1s ease 0.75s;
         animation-fill-mode: backwards;
         z-index: 500;
-        background-color: #121212;
+        background-color: #030303;
+        border-bottom: 3px solid #000;
 
         @include respond(phone) {
             padding: 3rem 10% 2rem;
@@ -49,6 +41,7 @@
 
         &-nav {
             display: flex;
+            align-items: center;
             font-size: 2.6rem;
 
             &-link {
@@ -62,6 +55,10 @@
                 }
                 &_work {
                     margin-left: 15rem;
+
+                    @include respond(phone) {
+                        margin-left: 0;
+                    }
                 }
                 &_selected {
                     &,
@@ -99,17 +96,17 @@
         line-height: 1.6;
 
         @include respond(tab-land) {
+            width: 100%;
             // padding: 5rem 10%;
         }
 
         @include respond(phone) {
-            width: 100%;
             // padding: 20% 10% 10%;
         }
 
         &-top {
             &-title {
-                font-size: 6.5rem;
+                font-size: 5rem;
                 animation: moveInBottom 1s ease 0.75s;
                 animation-fill-mode: backwards;
                 color: #f7f7f2;
@@ -363,6 +360,7 @@
 .social-links {
     position: fixed;
     bottom: 0;
-    background-color: #121212;
+    background-color: #030303;
+    border-top: 3px solid #000;
     z-index: 201;
 }
