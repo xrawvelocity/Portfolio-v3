@@ -161,7 +161,7 @@ const About = () => {
                             >
                                 Front End
                             </Typography>
-                            <Grid container spacing={2}>
+                            <Grid container spacing={2} sx={{ justifyContent: 'center' }}>
                                 {frontEndSkills.map((each) => {
                                     return (
                                         <Grid item xs={6} xl={3}>
@@ -195,7 +195,7 @@ const About = () => {
                             >
                                 Back End
                             </Typography>
-                            <Grid container spacing={2}>
+                            <Grid container spacing={2} sx={{ justifyContent: 'center' }}>
                                 {backEndSkills.map((each) => {
                                     return (
                                         <Grid item xs={6}>
