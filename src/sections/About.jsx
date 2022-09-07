@@ -27,11 +27,11 @@ const About = () => {
         { name: "SASS", image: sasslogo },
         { name: "Javascript", image: javascriptlogo },
         { name: "React JS", image: reactjslogo },
-        { name: "Redux", image: reduxlogo },
+        { name: "Gatsby", image: gatsbylogo },
         { name: "Angular", image: angularlogo },
         { name: "Typescript", image: typescriptlogo },
         { name: "Material UI", image: materialuilogo },
-        { name: "Gatsby", image: gatsbylogo },
+        { name: "Redux", image: reduxlogo },
     ];
 
     let backEndSkills = [
