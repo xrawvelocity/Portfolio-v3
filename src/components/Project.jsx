@@ -5,14 +5,10 @@ import {
     CardMedia,
     Typography,
     Button,
-    Modal,
-    Paper,
-    Fade,
-    Backdrop,
     Grid,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import React, { useState } from "react";
+import React from "react";
 import Flex from "./Flex";
 
 const Project = ({
@@ -180,6 +176,7 @@ const Project = ({
                             sx={{
                                 fontSize: { xs: "12px", xl: "16px" },
                                 color: "#fff !important",
+                                whiteSpace: 'nowrap'
                             }}
                         >
                             Visit Site
@@ -193,6 +190,7 @@ const Project = ({
                             sx={{
                                 fontSize: { xs: "12px", xl: "16px" },
                                 ml: "16px !important",
+                                whiteSpace: 'nowrap'
                             }}
                         >
                             View Code

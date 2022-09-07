@@ -1,5 +1,4 @@
 import { Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
 import Flex from "../components/Flex";
 
@@ -15,6 +14,8 @@ import mongodblogo from "../images/logos/mongodblogo.png";
 import firebaselogo from "../images/logos/firebase.png";
 import nodejslogo from "../images/logos/nodejslogo.png";
 import expressjslogo from "../images/logos/expressjslogo.svg";
+import angularlogo from "../images/logos/angularlogo.png";
+import typescriptlogo from "../images/logos/typescriptlogo.svg";
 import Title from "../components/Title";
 
 import hyperlapseVideo from "../video/codingHyperlapse.mp4";
@@ -27,6 +28,8 @@ const About = () => {
         { name: "Javascript", image: javascriptlogo },
         { name: "React JS", image: reactjslogo },
         { name: "Redux", image: reduxlogo },
+        { name: "Angular", image: angularlogo },
+        { name: "Typescript", image: typescriptlogo },
         { name: "Material UI", image: materialuilogo },
         { name: "Gatsby", image: gatsbylogo },
     ];
@@ -56,7 +59,7 @@ const About = () => {
                         marginRight: "1.5rem",
                     }}
                 />
-                <Typography sx={{ fontSize: "2rem" }}>{each.name}</Typography>
+                <Typography sx={{ fontSize: "2rem", whiteSpace: 'nowrap' }}>{each.name}</Typography>
             </Flex>
         );
     };
@@ -116,9 +119,12 @@ const About = () => {
                             since High School and it has always been my dream to
                             be a Software Engineer. I attended the Ironhack
                             Miami Coding Bootcamp on January 2020. So far I've
-                            acquired 1 year of professional experience working
+                            acquired 2 years of professional experience. One year I was working
                             at a fin tech company where I built the entire front
-                            end for their software's admin and merchant portals.
+                            end for their software's admin and merchant portals. The other year
+                            I worked at a company that built softwares for
+                            the dental industry where I collaborated with a
+                            large team and learnt new technologies.
                         </Typography>
                     </Flex>
                 </Flex>

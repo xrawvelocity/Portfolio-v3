@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import Stars from "../components/Stars";
 
 const Hero = () => {
@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="landing-heading">
                 <div className="landing-heading-top">
                     <h2 className="landing-heading-top-title">
-                        Hi! I'm Victor, a full-stack <br /> web developer.
+                        Hi! I'm Victor, a front-end <br /> web developer.
                     </h2>
                     <p className="landing-heading-top-subtitle">
                         I craft creative and result-oriented websites for
