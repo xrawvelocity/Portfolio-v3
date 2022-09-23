@@ -124,7 +124,7 @@ const About = () => {
                             end for their software's admin and merchant portals. The other year
                             I worked at a company that built softwares for
                             the dental industry where I collaborated with a
-                            large team and learnt new technologies.
+                            large team and learned new technologies.
                         </Typography>
                     </Flex>
                 </Flex>
