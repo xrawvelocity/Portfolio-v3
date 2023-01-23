@@ -1,13 +1,18 @@
 @mixin respond($breakpoint) {
     @if ($breakpoint == smallphone) {
-        @media only screen and (max-width: 35em) {
+        @media only screen and (max-width: 20em) {
             @content;
-        } //560px
+        } //320px
     }
     @if ($breakpoint == phone) {
+        @media only screen and (max-width: 30em) {
+            @content;
+        } //480px
+    }
+    @if ($breakpoint == bigphone) {
         @media only screen and (max-width: 44em) {
             @content;
-        } //600px?
+        } //700px
     }
     @if ($breakpoint == tab-port) {
         @media only screen and (max-width: 65em) {
@@ -48,7 +53,7 @@
         display: block;
         height: 3px;
         width: 100%;
-        background-color: #fff;
+        background-color: $primary;
         transform: scaleX(0);
         transform-origin: 0%;
         transition: transform $time ease;

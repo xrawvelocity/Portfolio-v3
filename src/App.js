@@ -10,8 +10,8 @@ const App = () => {
         <main id="top">
             <Navigation />
             <Hero />
-            <Work />
             <About />
+            <Work />
             <Contact />
         </main>
     );

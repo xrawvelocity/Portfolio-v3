@@ -17,7 +17,7 @@ import Title from "../components/Title";
 
 const Work = () => {
     return (
-        <section className="work">
+        <section className="work" style={{ position: "relative" }}>
             <Title>Work</Title>
             <Grid container spacing={6} justify="center">
                 <Project
@@ -99,7 +99,7 @@ const Work = () => {
                     code={"https://github.com/xrawvelocity/luisofavila"}
                 />
             </Grid>
-            <div id="about" />
+            <div id="contact" style={{ position: "absolute", bottom: 70 }} />
         </section>
     );
 };

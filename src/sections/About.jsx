@@ -21,24 +21,21 @@ import Title from "../components/Title";
 import hyperlapseVideo from "../video/codingHyperlapse.mp4";
 
 const About = () => {
-    let frontEndSkills = [
+    let skills = [
         { name: "HTML", image: htmllogo },
         { name: "CSS", image: csslogo },
         { name: "SASS", image: sasslogo },
         { name: "Javascript", image: javascriptlogo },
         { name: "React JS", image: reactjslogo },
-        { name: "Gatsby", image: gatsbylogo },
         { name: "Angular", image: angularlogo },
+        { name: "Gatsby", image: gatsbylogo },
         { name: "Typescript", image: typescriptlogo },
         { name: "Material UI", image: materialuilogo },
         { name: "Redux", image: reduxlogo },
-    ];
-
-    let backEndSkills = [
-        { name: "Node JS", image: nodejslogo },
-        { name: "Express JS", image: expressjslogo },
-        { name: "Mongo DB", image: mongodblogo },
-        { name: "Firebase", image: firebaselogo },
+        // { name: "Node JS", image: nodejslogo },
+        // { name: "Express JS", image: expressjslogo },
+        // { name: "Mongo DB", image: mongodblogo },
+        // { name: "Firebase", image: firebaselogo },
     ];
 
     const Skill = ({ each }) => {
@@ -59,13 +56,15 @@ const About = () => {
                         marginRight: "1.5rem",
                     }}
                 />
-                <Typography sx={{ fontSize: "2rem", whiteSpace: 'nowrap' }}>{each.name}</Typography>
+                <Typography sx={{ fontSize: "2rem", whiteSpace: "nowrap" }}>
+                    {each.name}
+                </Typography>
             </Flex>
         );
     };
 
     return (
-        <section className="about">
+        <section className="about" style={{ position: "relative" }}>
             <Title color="#000">About</Title>
 
             <Flex sx={{ flexDirection: "column" }}>
@@ -119,12 +118,13 @@ const About = () => {
                             since High School and it has always been my dream to
                             be a Software Engineer. I attended the Ironhack
                             Miami Coding Bootcamp on January 2020. So far I've
-                            acquired 2 years of professional experience. One year I was working
-                            at a fin tech company where I built the entire front
-                            end for their software's admin and merchant portals. The other year
-                            I worked at a company that built softwares for
-                            the dental industry where I collaborated with a
-                            large team and learned new technologies.
+                            acquired 2 years of professional experience. One
+                            year I was working at a fin tech company where I
+                            built the entire front end for their software's
+                            admin and merchant portals. The other year I worked
+                            at a company that built softwares for the dental
+                            industry where I collaborated with a large team and
+                            learned new technologies.
                         </Typography>
                     </Flex>
                 </Flex>
@@ -142,7 +142,6 @@ const About = () => {
                         sx={{
                             justifyContent: { xs: "center", md: "center" },
                             width: { xs: "100%", md: "50%" },
-                            mr: { xs: "0", xl: "7rem" },
                             mb: { xs: "7rem", md: "0" },
                         }}
                     >
@@ -152,17 +151,13 @@ const About = () => {
                                 alignItems: "center",
                             }}
                         >
-                            <Typography
-                                sx={{
-                                    mb: { xs: "4rem", lg: "2.5rem" },
-                                    fontSize: "2.8rem",
-                                    fontWeight: "600",
-                                }}
+                            <Title>Skills</Title>
+                            <Grid
+                                container
+                                spacing={2}
+                                sx={{ justifyContent: "center" }}
                             >
-                                Front End
-                            </Typography>
-                            <Grid container spacing={2} sx={{ justifyContent: 'center' }}>
-                                {frontEndSkills.map((each) => {
+                                {skills.map((each) => {
                                     return (
                                         <Grid item xs={6} xl={3}>
                                             <Skill each={each} />
@@ -172,43 +167,9 @@ const About = () => {
                             </Grid>
                         </Flex>
                     </Flex>
-                    <Flex
-                        sx={{
-                            justifyContent: { xs: "center", md: "center" },
-                            width: { xs: "100%", md: "50%" },
-                            ml: { xs: "0", xl: "7rem" },
-                            mb: { xs: "7rem", md: "0" },
-                        }}
-                    >
-                        <Flex
-                            sx={{
-                                flexDirection: "column",
-                                alignItems: "center",
-                            }}
-                        >
-                            <Typography
-                                sx={{
-                                    mb: { xs: "4rem", lg: "2.5rem" },
-                                    fontSize: "2.8rem",
-                                    fontWeight: "600",
-                                }}
-                            >
-                                Back End
-                            </Typography>
-                            <Grid container spacing={2} sx={{ justifyContent: 'center' }}>
-                                {backEndSkills.map((each) => {
-                                    return (
-                                        <Grid item xs={6}>
-                                            <Skill each={each} />
-                                        </Grid>
-                                    );
-                                })}
-                            </Grid>
-                        </Flex>
-                    </Flex>
                 </Flex>
             </Flex>
-            <div id="contact" />
+            <div id="work" style={{ position: "absolute", bottom: 70 }} />
         </section>
     );
 };

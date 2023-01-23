@@ -71,6 +71,8 @@ const Project = ({
                     display: "flex",
                     flexDirection: { xs: "column", xl: "row" },
                     width: "100%",
+                    border: "1px solid #030303aa",
+                    color: "#030303",
                 }}
             >
                 <Flex
@@ -78,8 +80,8 @@ const Project = ({
                         flexDirection: "column",
                         width: { xs: "100%", xl: "55%" },
                         paddingBottom: "2rem",
-                        borderRight: { xs: "none", xl: "2px solid #ccc" },
-                        borderBottom: { xl: "none", xs: "2px solid #ccc" },
+                        borderRight: { xs: "none", xl: "1px solid #030303aa" },
+                        borderBottom: { xl: "none", xs: "1px solid #030303aa" },
                     }}
                 >
                     <CardMedia
@@ -176,7 +178,8 @@ const Project = ({
                             sx={{
                                 fontSize: { xs: "12px", xl: "16px" },
                                 color: "#fff !important",
-                                whiteSpace: 'nowrap'
+                                background: "#15ceb5",
+                                whiteSpace: "nowrap",
                             }}
                         >
                             Visit Site
@@ -190,7 +193,8 @@ const Project = ({
                             sx={{
                                 fontSize: { xs: "12px", xl: "16px" },
                                 ml: "16px !important",
-                                whiteSpace: 'nowrap'
+                                color: "#15ceb5 !important",
+                                whiteSpace: "nowrap",
                             }}
                         >
                             View Code

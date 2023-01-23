@@ -13,7 +13,7 @@
     }
 
     &-logo {
-        @extend .landing-top-logo;
+        @extend .top-logo;
 
         @include respond(phone) {
             display: none;
@@ -68,7 +68,8 @@
             &,
             &:link,
             &:visited {
-                color: #ddd;
+                transition: all .3s ease;
+                color: #030303;
                 margin-right: 2.5rem;
 
                 @include respond(phone) {
@@ -77,7 +78,7 @@
 
                 &:hover {
                     cursor: pointer;
-                    color: #0083ca;
+                    color: $primary;
                 }
             }
         }
@@ -86,7 +87,8 @@
             &,
             &:link,
             &:visited {
-                color: #ddd;
+                transition: all .3s ease;
+                color: #030303;
                 margin-right: 2.5rem;
 
                 @include respond(phone) {
@@ -95,7 +97,7 @@
 
                 &:hover {
                     cursor: pointer;
-                    color: #fff;
+                    color: $primary;
                 }
             }
         }
@@ -103,7 +105,8 @@
             &,
             &:link,
             &:visited {
-                color: #ddd;
+                transition: all .3s ease;
+                color: #030303;
                 margin-right: 2.5rem;
 
                 @include respond(phone) {
@@ -112,7 +115,7 @@
 
                 &:hover {
                     cursor: pointer;
-                    color: #fff;
+                    color: $primary;
                 }
             }
         }
@@ -120,12 +123,13 @@
             &,
             &:link,
             &:visited {
-                color: #ddd;
+                transition: all .3s ease;
+                color: #030303;
                 margin-bottom: 3px;
 
                 &:hover {
                     cursor: pointer;
-                    color: #fff;
+                    color: $primary;
                 }
             }
         }

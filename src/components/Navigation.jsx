@@ -9,25 +9,23 @@ import Flex from "./Flex";
 export const Navigation = () => {
     return (
         <>
-            <nav className="landing-top">
-                <a href="#top" className="landing-top-logo ">
-                    VD
+            <nav className="top">
+                <a href="#top" className="top-logo ">
+                    Vic Dev
                 </a>
-                <div className="landing-top-nav">
-                    <a
-                        className="landing-top-nav-link landing-top-nav-link_work"
-                        href="#work"
-                    >
-                        Work
-                    </a>
-                    <a className="landing-top-nav-link" href="#about">
+                <div className="top-nav">
+                    <a className="top-nav-link" href="#about">
                         About
                     </a>
-                    <a className="landing-top-nav-link" href="#contact">
+                    <a className="top-nav-link top-nav-link_work" href="#work">
+                        Work
+                    </a>
+                    <a className="top-nav-link" href="#contact">
                         Contact
                     </a>
                 </div>
                 <Box
+                    className="top-social"
                     sx={{
                         display: { xs: "none", md: "flex" },
                         alignItems: "center",
@@ -78,16 +76,14 @@ export const Navigation = () => {
             <Box
                 sx={{
                     display: { xs: "flex", md: "none" },
-                    width: "100%",
-                    justifyContent: "space-around",
-                    padding: "2rem",
+                    padding: "1rem",
                 }}
                 className="social-links"
             >
                 <a
                     href="https://linkedin.com/in/victor--fernandez"
                     style={{
-                        color: "#ddd",
+                        color: "#030303",
                         textDecoration: "none",
                         margin: "1rem 0",
                         fontSize: "4rem",
@@ -106,7 +102,7 @@ export const Navigation = () => {
                         <FontAwesomeIcon size="xs" icon={faLinkedin} />
                         <Typography
                             sx={{
-                                fontSize: "1.6rem",
+                                fontSize: "2rem",
                                 fontWeight: "600",
                                 mt: "1.5rem",
                             }}
@@ -118,7 +114,7 @@ export const Navigation = () => {
                 <a
                     href="https://github.com/xrawvelocity"
                     style={{
-                        color: "#ddd",
+                        color: "#030303",
                         textDecoration: "none",
                         margin: "1rem 0",
                         fontSize: "4rem",
@@ -137,7 +133,7 @@ export const Navigation = () => {
                         <FontAwesomeIcon size="xs" icon={faGithub} />
                         <Typography
                             sx={{
-                                fontSize: "1.6rem",
+                                fontSize: "2rem",
                                 fontWeight: "600",
                                 mt: "1.5rem",
                             }}
@@ -149,7 +145,7 @@ export const Navigation = () => {
                 <a
                     href="mailto:fernandezvictordev@gmail.com"
                     style={{
-                        color: "#ddd",
+                        color: "#030303",
                         textDecoration: "none",
                         margin: "1rem 0",
                         fontSize: "4rem",
@@ -168,7 +164,7 @@ export const Navigation = () => {
                         <FontAwesomeIcon size="xs" icon={faEnvelope} />
                         <Typography
                             sx={{
-                                fontSize: "1.6rem",
+                                fontSize: "2rem",
                                 fontWeight: "600",
                                 mt: "1.5rem",
                             }}
@@ -180,7 +176,7 @@ export const Navigation = () => {
                 <a
                     href="./files/VictorFernandezResume.docx"
                     style={{
-                        color: "#ddd",
+                        color: "#030303",
                         textDecoration: "none",
                         margin: "1rem 0",
                         fontSize: "4rem",
@@ -198,7 +194,7 @@ export const Navigation = () => {
                         <FontAwesomeIcon size="xs" icon={faFile} />
                         <Typography
                             sx={{
-                                fontSize: "1.6rem",
+                                fontSize: "2rem",
                                 fontWeight: "600",
                                 mt: "1.5rem",
                             }}

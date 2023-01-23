@@ -275,6 +275,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: 10%;
         padding: 1.5rem 2rem;
         font-weight: 500;
+        font-size: 2rem;
         text-transform: uppercase;
         background-color: #0d65f1;
         transition: all 0.3s ease; }

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import { TextField, Typography } from "@mui/material";
+import { Button, TextField, Typography } from "@mui/material";
 import React from "react";
 import Flex from "../components/Flex";
 import Title from "../components/Title";
@@ -21,25 +21,25 @@ const Contact = () => {
                     margin: "1.5rem 0",
                     "& > label": {
                         fontSize: "16px !important",
-                        color: "#fff !important",
+                        color: "#030303 !important",
                     },
                     "& > div": {
                         "&:hover": {
                             "& > fieldset": {
-                                borderColor: "#aaa !important",
+                                borderColor: "#333 !important",
                             },
                         },
                     },
                     "& > div > input": {
                         fontSize: "18px !important",
-                        color: "#fff",
+                        color: "#030303",
                     },
                     "& > div > textarea": {
                         fontSize: "18px !important",
-                        color: "#fff",
+                        color: "#030303",
                     },
                     "& > div > fieldset": {
-                        borderColor: "#fff !important",
+                        borderColor: "#030303 !important",
                     },
                 }}
                 name={name}
@@ -59,7 +59,6 @@ const Contact = () => {
                     alignItems: "center",
                     width: { xs: "100%", md: "45%" },
                     textAlign: "center",
-                    marginBottom: "3rem",
                 }}
             >
                 <Title>Contact</Title>
@@ -83,9 +82,25 @@ const Contact = () => {
                     label="Message"
                     type="textarea"
                 />
-                <button class="contact-form-button" type="submit">
+                {/* <button class="contact-form-button" type="submit">
                     Send email
-                </button>
+                </button> */}
+                <Button
+                    component="button"
+                    type="submit"
+                    variant="contained"
+                    color="primary"
+                    sx={{
+                        marginTop: "2rem",
+                        marginBottom: "4rem",
+                        fontSize: { xs: "18px", xl: "20px" },
+                        color: "#fff !important",
+                        background: "#15ceb5",
+                        whiteSpace: "nowrap",
+                    }}
+                >
+                    Send Email
+                </Button>
             </form>
         </section>
     );
