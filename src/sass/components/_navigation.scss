@@ -116,4 +116,6 @@
     z-index: 201;
     width: 100%;
     justify-content: space-around;
+    animation: moveInBottom 1s ease 0.75s;
+    animation-fill-mode: backwards;
 }

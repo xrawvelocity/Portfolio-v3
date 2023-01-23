@@ -81,6 +81,8 @@
             width: 50%;
             margin-top: 8rem;
             display: flex;
+            animation: moveInBottom 1.25s ease 1.25s;
+            animation-fill-mode: backwards;
 
             @include respond(tab-land) {
                 width: 100%;
