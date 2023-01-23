@@ -12,8 +12,8 @@ const Hero = () => {
                 </h2>
                 <p className="hero-text-subtitle">
                     My name is Victor Fernandez and I've been crafting creative
-                    and result-&nbsp;oriented websites for
-                    forward-&nbsp;thinking brands,
+                    and result-&#8288;oriented websites for
+                    forward-&#8288;thinking brands,
                     like&nbsp;yours,&nbsp;since&nbsp;2019
                 </p>
             </div>
