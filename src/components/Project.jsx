@@ -180,6 +180,9 @@ const Project = ({
                                 color: "#fff !important",
                                 background: "#15ceb5",
                                 whiteSpace: "nowrap",
+                                "&:hover": {
+                                    background: "#12AD9A !important",
+                                },
                             }}
                         >
                             Visit Site
@@ -195,6 +198,9 @@ const Project = ({
                                 ml: "16px !important",
                                 color: "#15ceb5 !important",
                                 whiteSpace: "nowrap",
+                                "&:hover": {
+                                    background: "#12AD9A20 !important",
+                                },
                             }}
                         >
                             View Code
