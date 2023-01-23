@@ -274,7 +274,8 @@ body::-webkit-scrollbar-thumb {
     @media only screen and (max-width: 65em) {
       .hero {
         width: 100%;
-        height: calc(100vh - 120px);
+        height: auto;
+        min-height: 50vh;
         flex-direction: column;
         justify-content: flex-start;
         margin: 100px 0 5rem; } }
