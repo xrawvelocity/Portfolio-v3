@@ -13,13 +13,13 @@
         justify-content: center;
         align-items: center;
         width: 45rem;
-        margin: 5rem auto;
+        margin: 5rem auto 7rem;
         font-size: 2.6rem;
 
-        @include respond(phone) {
+        @include respond(bigphone) {
             flex-direction: column;
-            margin: 0;
-            padding-bottom: 15rem;
+            margin: 3rem auto 14rem;
+            width: 100%;
         }
 
         &-button {

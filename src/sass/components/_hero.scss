@@ -94,7 +94,7 @@
                 height: 555px;
 
                 @include respond(tab-land) {
-                    height: auto;
+                    height: 100%;
                     max-height: 350px;
                 }
             }

@@ -65,7 +65,7 @@ const Contact = () => {
                 <Typography sx={{ fontSize: "3rem", lineHeight: "1.5" }}>
                     If you'd like to start a new project, need help with an
                     existing project or have any other question, please feel
-                    free to reach out to me.
+                    free to reach&nbsp;out&nbsp;to&nbsp;me.
                 </Typography>
             </Flex>
 
@@ -92,11 +92,14 @@ const Contact = () => {
                     color="primary"
                     sx={{
                         marginTop: "2rem",
-                        marginBottom: "4rem",
+                        marginBottom: "8rem",
                         fontSize: { xs: "18px", xl: "20px" },
                         color: "#fff !important",
                         background: "#15ceb5",
                         whiteSpace: "nowrap",
+                        "&:hover": {
+                            background: "#12AD9A !important",
+                        },
                     }}
                 >
                     Send Email
