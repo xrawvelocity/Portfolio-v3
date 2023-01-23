@@ -76,7 +76,8 @@ export const Navigation = () => {
             <Box
                 sx={{
                     display: { xs: "flex", md: "none" },
-                    padding: "1rem",
+                    padding: "1rem 10%",
+                    justifyContent: "space-between",
                 }}
                 className="social-links"
             >
@@ -104,7 +105,7 @@ export const Navigation = () => {
                             sx={{
                                 fontSize: "2rem",
                                 fontWeight: "600",
-                                mt: "1.5rem",
+                                mt: ".5rem",
                             }}
                         >
                             Linked In
@@ -135,7 +136,7 @@ export const Navigation = () => {
                             sx={{
                                 fontSize: "2rem",
                                 fontWeight: "600",
-                                mt: "1.5rem",
+                                mt: ".5rem",
                             }}
                         >
                             Github
@@ -166,7 +167,7 @@ export const Navigation = () => {
                             sx={{
                                 fontSize: "2rem",
                                 fontWeight: "600",
-                                mt: "1.5rem",
+                                mt: ".5rem",
                             }}
                         >
                             Email
@@ -196,7 +197,7 @@ export const Navigation = () => {
                             sx={{
                                 fontSize: "2rem",
                                 fontWeight: "600",
-                                mt: "1.5rem",
+                                mt: ".5rem",
                             }}
                         >
                             Resume

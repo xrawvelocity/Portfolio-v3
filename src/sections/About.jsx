@@ -130,7 +130,7 @@ const About = () => {
                 </Flex>
                 <Flex
                     sx={{
-                        my: "7rem",
+                        mt: "7rem",
                         width: "100%",
                         p: { xs: "0 10%", xl: "0 10%" },
                         flexDirection: { xs: "column", md: "row" },
