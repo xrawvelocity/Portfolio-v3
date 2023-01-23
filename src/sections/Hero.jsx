@@ -12,8 +12,9 @@ const Hero = () => {
                 </h2>
                 <p className="hero-text-subtitle">
                     My name is Victor Fernandez and I've been crafting creative
-                    and result-oriented websites for forward-thinking brands,
-                    like yours, since&nbsp;2019
+                    and result-&nbsp;oriented websites for
+                    forward-&nbsp;thinking brands,
+                    like&nbsp;yours,&nbsp;since&nbsp;2019
                 </p>
             </div>
             <div className="hero-image">
