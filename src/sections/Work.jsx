@@ -27,7 +27,7 @@ const Work = () => {
                         "Social media for Foreign Exchange traders that allows users to visualize their performance using charts and to share their trading ideas. "
                     }
                     started="February, 2020"
-                    updated="December, 2021"
+                    updated="January, 2023"
                     technologies={[
                         { logo: reactLogo, name: "React JS" },
                         { logo: materialUIlogo, name: "Material UI" },
