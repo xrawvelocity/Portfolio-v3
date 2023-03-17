@@ -32,10 +32,10 @@ const About = () => {
         { name: "Typescript", image: typescriptlogo },
         { name: "Material UI", image: materialuilogo },
         { name: "Redux", image: reduxlogo },
-        // { name: "Node JS", image: nodejslogo },
-        // { name: "Express JS", image: expressjslogo },
-        // { name: "Mongo DB", image: mongodblogo },
-        // { name: "Firebase", image: firebaselogo },
+        { name: "Node JS", image: nodejslogo },
+        { name: "Express JS", image: expressjslogo },
+        { name: "Mongo DB", image: mongodblogo },
+        { name: "Firebase", image: firebaselogo },
     ];
 
     const Skill = ({ each }) => {
