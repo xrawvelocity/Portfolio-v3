@@ -34,7 +34,7 @@ const Work = () => {
                         { logo: rechartsLogo, name: "Recharts" },
                         { logo: firebaseLogo, name: "Firebase" },
                     ]}
-                    demo={"https://www.tracktrade.co"}
+                    demo={"https://tracktrade.netlify.app/"}
                     code={"https://github.com/TrackTraders/TrackTrade"}
                 />
 
