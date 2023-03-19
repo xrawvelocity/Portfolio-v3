@@ -17,7 +17,10 @@ import Title from "../components/Title";
 
 const Work = () => {
     return (
-        <section className="work" style={{ position: "relative" }}>
+        <section
+            className="work"
+            style={{ position: "relative", paddingTop: "5rem" }}
+        >
             <Title>Work</Title>
             <Grid container spacing={6} justify="center">
                 <Project
