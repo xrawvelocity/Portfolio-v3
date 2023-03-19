@@ -112,19 +112,21 @@ const About = () => {
                                 lineHeight: 1.7,
                             }}
                         >
-                            Programmer born in Cuba, but raised in Miami.
-                            Solving problems with creative and efficient
-                            solutions is what I'm best at. I've been coding
-                            since High School and it has always been my dream to
-                            be a Software Engineer. I attended the Ironhack
-                            Miami Coding Bootcamp on January 2020. So far I've
-                            acquired 2 years of professional experience. One
-                            year I was working at a fin tech company where I
-                            built the entire front end for their software's
-                            admin and merchant portals. The other year I worked
-                            at a company that built softwares for the dental
-                            industry where I collaborated with a large team and
-                            learned new technologies.
+                            As a skilled programmer with 2 years of professional
+                            experience, I specialize in delivering creative and
+                            efficient solutions to complex problems. My passion
+                            for software engineering began in high school and
+                            was further refined through completion of the
+                            Ironhack Miami Coding Bootcamp in January 2020. With
+                            expertise in front-end development and experience in
+                            fintech and dental software industries, I am adept
+                            at collaborating with large teams and learning new
+                            technologies. My most recent roles involved building
+                            the entire front end for a fintech company's
+                            software admin and merchant portals and contributing
+                            to multiple software projects for a dental software
+                            company. Let's work together to create innovative
+                            software solutions.
                         </Typography>
                     </Flex>
                 </Flex>
