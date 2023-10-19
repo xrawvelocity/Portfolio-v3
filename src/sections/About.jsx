@@ -112,7 +112,7 @@ const About = () => {
                                 lineHeight: 1.7,
                             }}
                         >
-                            As a skilled programmer with 2 years of professional
+                            As a skilled programmer with 3 years of professional
                             experience, I specialize in delivering creative and
                             efficient solutions to complex problems. My passion
                             for software engineering began in high school and
