@@ -55,7 +55,7 @@ const Work = () => {
                         { logo: firebaseLogo, name: "Firebase" },
                         { logo: sassLogo, name: "SASS" },
                     ]}
-                    demo={"https://www.therusticdude.com"}
+                    demo={"https://therusticdude2.netlify.app/"}
                     code={"https://github.com/xrawvelocity/theRusticDude"}
                 />
 
