@@ -4,7 +4,7 @@ import Project from "../components/Project";
 
 import rusticdudebg from "../images/rusticdudebg.png";
 import tracktradebg from "../images/tracktradebg.png";
-import micturbobg from "../images/micturbobg.png";
+import nowpalletbg from "../images/nowpalletbg.png";
 import luisavilabg from "../images/luisavilabg.png";
 
 import reactLogo from "../images/logos/reactjslogo.png";
@@ -23,6 +23,22 @@ const Work = () => {
         >
             <Title>Work</Title>
             <Grid container spacing={6} justify="center">
+                <Project
+                    image={nowpalletbg}
+                    title={"Now Pallet | E-Commerce"}
+                    description={
+                        "A custom responsive e-commerce site for a wholesale distribution company with inventory management."
+                    }
+                    started="November, 2023"
+                    updated="February, 2024"
+                    technologies={[
+                        { logo: reactLogo, name: "React JS" },
+                        { logo: materialUIlogo, name: "Material UI" },
+                        { logo: firebaseLogo, name: "Firebase" },
+                    ]}
+                    demo={"https://www.nowpallet.com/"}
+                    code={"https://github.com/xrawvelocity/nowpallet"}
+                />
                 <Project
                     image={tracktradebg}
                     title={"Track Trade | Software"}
@@ -59,7 +75,7 @@ const Work = () => {
                     code={"https://github.com/xrawvelocity/theRusticDude"}
                 />
 
-                <Project
+                {/* <Project
                     image={micturbobg}
                     title={"Mic Turbo | E-Commerce"}
                     description={
@@ -81,7 +97,7 @@ const Work = () => {
                     ]}
                     demo={"https://micturbo.netlify.app"}
                     code={"https://github.com/xrawvelocity/micturbo"}
-                />
+                /> */}
 
                 <Project
                     image={luisavilabg}
