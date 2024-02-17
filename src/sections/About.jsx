@@ -43,8 +43,9 @@ const About = () => {
             <Flex
                 sx={{
                     alignItems: "center",
-                    justifyContent: "center",
+                    justifyContent: { xs: "flex-start", lg: "center" },
                     mb: { xs: "2.5rem", lg: "2rem", xl: "1.5rem" },
+                    pl: { xs: "4rem", lg: "0" },
                 }}
             >
                 <img
@@ -155,7 +156,7 @@ const About = () => {
                     </Flex>
                 </Flex>
             </Flex>
-            <div id="work" style={{ position: "absolute", bottom: 70 }} />
+            <div id="projects" style={{ position: "absolute", bottom: 70 }} />
         </section>
     );
 };

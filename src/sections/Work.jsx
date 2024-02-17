@@ -2,10 +2,10 @@ import { Grid } from "@mui/material";
 import React from "react";
 import Project from "../components/Project";
 
-import rusticdudebg from "../images/rusticdudebg.png";
-import tracktradebg from "../images/tracktradebg.png";
-import nowpalletbg from "../images/nowpalletbg.png";
-import luisavilabg from "../images/luisavilabg.png";
+import rusticdudebg from "../images/backgrounds/rusticdudebg.png";
+import tracktradebg from "../images/backgrounds/tracktradebg.png";
+import nowpalletbg from "../images/backgrounds/nowpalletbg.png";
+import luisavilabg from "../images/backgrounds/luisavilabg.png";
 
 import reactLogo from "../images/logos/reactjslogo.png";
 import materialUIlogo from "../images/logos/materialuilogo.png";
@@ -21,7 +21,7 @@ const Work = () => {
             className="work"
             style={{ position: "relative", paddingTop: "5rem" }}
         >
-            <Title>Work</Title>
+            <Title>Projects</Title>
             <Grid container spacing={6} justify="center">
                 <Project
                     image={nowpalletbg}
@@ -74,30 +74,6 @@ const Work = () => {
                     demo={"https://therusticdude2.netlify.app/"}
                     code={"https://github.com/xrawvelocity/theRusticDude"}
                 />
-
-                {/* <Project
-                    image={micturbobg}
-                    title={"Mic Turbo | E-Commerce"}
-                    description={
-                        "A custom responsive e-commerce site for a mechanic shop with payment processing capabilities."
-                    }
-                    started="September, 2021"
-                    updated="December, 2021"
-                    technologies={[
-                        { logo: reactLogo, name: "React JS" },
-                        { logo: materialUIlogo, name: "Material UI" },
-                        {
-                            logo: "https://res.cloudinary.com/practicaldev/image/fetch/s--ITpGWFxn--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/2134/d92f50cd-7ad7-48ba-9970-7abecdeb2194.png",
-                            name: "Commerce JS",
-                        },
-                        {
-                            logo: "https://stripe.com/img/v3/home/twitter.png",
-                            name: "Stripe JS",
-                        },
-                    ]}
-                    demo={"https://micturbo.netlify.app"}
-                    code={"https://github.com/xrawvelocity/micturbo"}
-                /> */}
 
                 <Project
                     image={luisavilabg}

@@ -10,15 +10,23 @@ export const Navigation = () => {
     return (
         <>
             <nav className="top">
-                <a href="#top" className="top-logo ">
+                <h1
+                    className="top-logo"
+                    onClick={() => {
+                        window.scrollTo(0, 0);
+                    }}
+                >
                     Vic Dev
-                </a>
+                </h1>
                 <div className="top-nav">
                     <a className="top-nav-link" href="#about">
                         About
                     </a>
-                    <a className="top-nav-link top-nav-link_work" href="#work">
-                        Work
+                    <a
+                        className="top-nav-link top-nav-link_work"
+                        href="#projects"
+                    >
+                        Projects
                     </a>
                     <a className="top-nav-link" href="#contact">
                         Contact

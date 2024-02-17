@@ -19,12 +19,14 @@
 
     &-logo {
         font-family: "Courgette", cursive;
-        font-size: 4rem;
+        font-size: 4rem !important;
+        font-weight: 400 !important;
         width: 180px;
         white-space: nowrap;
 
         @include respond(phone) {
             font-size: 3.5rem;
+            margin-right: 2rem;
         }
 
         &,
@@ -65,10 +67,6 @@
             }
 
             @include respond(phone) {
-                margin: 0 1.5rem;
-            }
-
-            @include respond(smallphone) {
                 margin: 0 1rem;
             }
 
