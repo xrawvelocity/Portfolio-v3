@@ -62,10 +62,13 @@ const Contact = () => {
                 }}
             >
                 <Title>Contact</Title>
-                <Typography sx={{ fontSize: "20px", lineHeight: "1.5" }}>
-                    If you'd like to start a new project, need help with an
-                    existing project or have any other question, please feel
-                    free to reach&nbsp;out&nbsp;to&nbsp;me.
+                <Typography
+                    sx={{
+                        fontSize: { xs: "16px", xl: "20px" },
+                        lineHeight: "1.5",
+                    }}
+                >
+                    Please feel free to reach&nbsp;out&nbsp;to&nbsp;me.
                 </Typography>
             </Flex>
 
@@ -93,7 +96,7 @@ const Contact = () => {
                     sx={{
                         marginTop: "2rem",
                         marginBottom: "8rem",
-                        fontSize: { xs: "18px", xl: "20px" },
+                        fontSize: { xs: "16px", xl: "20px" },
                         color: "#fff !important",
                         background: "#15ceb5",
                         whiteSpace: "nowrap",

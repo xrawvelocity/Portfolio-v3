@@ -78,7 +78,7 @@ const About = () => {
                         sx={{
                             flexDirection: "column",
                             alignItems: "center",
-                            width: { xs: "100%", md: "50%" },
+                            width: { xs: "100%", md: "40%" },
                             mr: { xs: "0", md: "5rem", xl: "7rem" },
                             pl: { xs: "0", md: "10%" },
                         }}
@@ -90,7 +90,7 @@ const About = () => {
                     <Flex
                         sx={{
                             flexDirection: "column",
-                            width: { xs: "100%", md: "50%" },
+                            width: { xs: "100%", md: "40%" },
                             p: { xs: "0 10%", md: "0 10% 0 0" },
                             ml: { xs: "0", md: "5rem", xl: "7rem" },
                             alignItems: "center",
@@ -108,24 +108,18 @@ const About = () => {
                                 },
 
                                 mt: { xs: "5rem", md: "0" },
-                                lineHeight: 1.7,
+                                lineHeight: 2,
                             }}
                         >
-                            As a skilled programmer with 3 years of professional
-                            experience, I specialize in delivering creative and
-                            efficient solutions to complex problems. My passion
-                            for software engineering began in high school and
-                            was further refined through completion of the
-                            Ironhack Miami Coding Bootcamp in January 2020. With
-                            expertise in front-end development and experience in
-                            fintech and dental software industries, I am adept
-                            at collaborating with large teams and learning new
-                            technologies. My most recent roles involved building
-                            the entire front end for a fintech company's
-                            software admin and merchant portals and contributing
-                            to multiple software projects for a dental software
-                            company. Let's work together to create innovative
-                            software solutions.
+                            Originally from Cuba and raised in Florida, I've
+                            been passionate about coding since high school. In
+                            2020, I attended Ironhack's Miami coding bootcamp,
+                            solidifying my knowledge. With two years of
+                            professional experience, I've contributed to
+                            projects in both fintech and dental software
+                            companies. I've also successfully managed freelance
+                            projects, all which led me to strengthen these
+                            following&nbsp;skills:
                         </Typography>
                     </Flex>
                 </Flex>
