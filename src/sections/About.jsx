@@ -98,14 +98,13 @@ const About = () => {
                         }}
                     >
                         <Typography
-                            className="about-story-paragraph"
                             sx={{
                                 width: "100%",
                                 fontSize: {
                                     xs: "15px",
                                     md: "18px",
                                     lg: "18px",
-                                    xl: "24px",
+                                    xl: "20px",
                                 },
 
                                 mt: { xs: "5rem", md: "0" },
@@ -142,32 +141,23 @@ const About = () => {
                 >
                     <Flex
                         sx={{
-                            justifyContent: { xs: "center", md: "center" },
-                            width: { xs: "100%", md: "50%" },
-                            mb: { xs: "7rem", md: "0" },
+                            flexDirection: "column",
+                            alignItems: "center",
                         }}
                     >
-                        <Flex
-                            sx={{
-                                flexDirection: "column",
-                                alignItems: "center",
-                            }}
+                        <Grid
+                            container
+                            spacing={2}
+                            sx={{ justifyContent: "center" }}
                         >
-                            <Title>Skills</Title>
-                            <Grid
-                                container
-                                spacing={2}
-                                sx={{ justifyContent: "center" }}
-                            >
-                                {skills.map((each) => {
-                                    return (
-                                        <Grid item xs={6} xl={3}>
-                                            <Skill each={each} />
-                                        </Grid>
-                                    );
-                                })}
-                            </Grid>
-                        </Flex>
+                            {skills.map((each) => {
+                                return (
+                                    <Grid item xs={6} xl={1.7}>
+                                        <Skill each={each} />
+                                    </Grid>
+                                );
+                            })}
+                        </Grid>
                     </Flex>
                 </Flex>
             </Flex>

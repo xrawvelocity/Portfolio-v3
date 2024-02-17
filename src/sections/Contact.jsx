@@ -62,7 +62,7 @@ const Contact = () => {
                 }}
             >
                 <Title>Contact</Title>
-                <Typography sx={{ fontSize: "3rem", lineHeight: "1.5" }}>
+                <Typography sx={{ fontSize: "20px", lineHeight: "1.5" }}>
                     If you'd like to start a new project, need help with an
                     existing project or have any other question, please feel
                     free to reach&nbsp;out&nbsp;to&nbsp;me.
@@ -71,7 +71,7 @@ const Contact = () => {
 
             <form
                 class="contact-form"
-                action="https://formspree.io/xjvojgwr"
+                action="https://formspree.io/f/mdoqgwej"
                 method="POST"
             >
                 <ContactInput name="name" label="Name" />

@@ -1,5 +1,5 @@
 import React from "react";
-import codingillustration from "../images/coding-illustration.svg";
+import heroImage from "../images/profile.jpg";
 
 const Hero = () => {
     return (
@@ -18,7 +18,7 @@ const Hero = () => {
                 </p>
             </div>
             <div className="hero-image">
-                <img src={codingillustration} />
+                <img src={heroImage} alt="victor fernandez" />
             </div>
             <div class="scroll-down"></div>
             <div id="about" style={{ position: "absolute", bottom: 70 }} />

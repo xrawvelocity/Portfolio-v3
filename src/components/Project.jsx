@@ -149,11 +149,11 @@ const Project = ({
                             gutterBottom
                             sx={{ fontSize: "14px", marginBottom: "1rem" }}
                         >
-                            <b>Project started on:</b> {started}
+                            <b>Started on:</b> {started}
                         </Typography>
                         {updated && (
                             <Typography gutterBottom sx={{ fontSize: "14px" }}>
-                                <b>Last updated on:</b> {updated}
+                                <b>Updated on:</b> {updated}
                             </Typography>
                         )}
                     </Flex>

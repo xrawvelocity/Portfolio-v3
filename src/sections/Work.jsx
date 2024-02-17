@@ -106,6 +106,7 @@ const Work = () => {
                         "This is a simple portfolio for an actor that allows visitors to get to know him and his work"
                     }
                     started="November, 2021"
+                    updated="June, 2022"
                     technologies={[
                         { logo: reactLogo, name: "React JS" },
                         { logo: materialUIlogo, name: "Material UI" },

@@ -26,7 +26,10 @@
         }
 
         @include respond(bigphone) {
-            
+            height: 86vh;
+            justify-content: center;
+            margin: 60px 0 60px;
+            position: relative;
         }
 
         &-text {
@@ -61,11 +64,11 @@
             }
             &-subtitle {
                 margin-top: 3rem;
-                font-size: 2.7rem;
+                font-size: 24px;
                 line-height: 1.5;
                 font-weight: 300;
                 width: 100%;
-                max-width: 420px;
+                max-width: 440px;
                 text-align: right;
                 animation: moveInBottom 1s ease 1s;
                 animation-fill-mode: backwards;
@@ -79,7 +82,8 @@
 
         &-image {
             width: 50%;
-            margin-top: 8rem;
+            margin-top: 2rem;
+            padding-left: 10rem;
             display: flex;
             animation: moveInBottom 1.25s ease 1.25s;
             animation-fill-mode: backwards;
@@ -87,11 +91,21 @@
             @include respond(tab-land) {
                 width: 100%;
                 margin-top: 3rem;
+                margin-bottom: 6rem;
+                height: 300px;
+                padding-left: 0rem;
                 justify-content: center;
             }
 
+            @include respond(phone) {
+                height: 260px;
+                margin-top: 6rem;
+            }
+
             img {
-                height: 555px;
+                height: 480px;
+                border-radius: 50%;
+                filter: hue-rotate(-15deg) contrast(1.1);
 
                 @include respond(tab-land) {
                     height: 100%;
@@ -128,11 +142,6 @@
     }
 }
 
-.section-one {
-    height: 50vh;
-    background-color: #04061a;
-}
-
 .scroll-down {
     position: absolute;
     left: 50%;
@@ -154,10 +163,6 @@
     -webkit-animation: fade_move_down 4s ease-in-out infinite;
     -moz-animation: fade_move_down 4s ease-in-out infinite;
     animation: fade_move_down 4s ease-in-out infinite;
-
-    @include respond(tab-port) {
-        position: inherit;
-    }
 }
 
 /*animated scroll arrow animation*/
@@ -200,4 +205,3 @@
         opacity: 0;
     }
 }
-
