@@ -71,7 +71,7 @@ export const Navigation = () => {
                     </Tooltip>
                     <Tooltip placement="bottom" arrow title="Download Resume">
                         <a
-                            href="./files/VictorFernandezResume.docx"
+                            href="./files/VictorFernandezResume.pdf"
                             className="footer-links_resume"
                             download
                         >
@@ -183,7 +183,7 @@ export const Navigation = () => {
                     </Flex>
                 </a>
                 <a
-                    href="./files/VictorFernandezResume.docx"
+                    href="./files/VictorFernandezResume.pdf"
                     style={{
                         color: "#030303",
                         textDecoration: "none",
