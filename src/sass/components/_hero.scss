@@ -169,7 +169,7 @@
     animation: fade_move_down 4s ease-in-out infinite;
 
     @include respond(phone) {
-        bottom: 2%;
+        bottom: 3%;
     }
 }
 
